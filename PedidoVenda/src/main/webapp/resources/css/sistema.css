@@ -19,8 +19,14 @@ header {
 }
 
 header > div {
-	margin-left: 8px;
-	
-	
-	
+	margin-left: 8px;	
+}
+
+#conteudo {
+	padding: 0x 8px;
+}
+
+footer {
+	padding: 0px 8px;
+	margin-bottom: 10px;
 }
