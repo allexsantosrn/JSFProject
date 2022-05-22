@@ -26,10 +26,11 @@
     <param-value>0</param-value> <!-- cache desligado -->
 	</context-param>
 	
-	<!--  
+	<!--  --> 
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
-		<param-value>le-frog</param-value>
+		<param-value>hot-sneaks</param-value>
 	</context-param>
-					--> 
+	 
+					
 </web-app>
