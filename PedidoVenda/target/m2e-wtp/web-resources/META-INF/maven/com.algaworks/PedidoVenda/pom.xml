@@ -12,6 +12,15 @@
 		<maven.compiler.source>15</maven.compiler.source>
 		<maven.compiler.target>15</maven.compiler.target>
 	</properties>
+	
+	<repositories>	
+			<repository>
+				<id>prime-repo</id>
+				<name>Primefaces Maven Repository</name>
+				<url>http://repository.primefaces.org</url>
+				<layout>default</layout>
+			</repository>
+	</repositories>
 
 	<dependencies>
 
@@ -27,7 +36,14 @@
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<version>11.0.0</version>
-		</dependency>
+		</dependency>		
+		
+		<!-- https://mvnrepository.com/artifact/org.primefaces.themes/all-themes -->
+		<dependency>
+		    <groupId>org.primefaces.themes</groupId>
+		    <artifactId>all-themes</artifactId>
+		    <version>1.0.10</version>
+		</dependency>		
 
 	</dependencies>
 	
