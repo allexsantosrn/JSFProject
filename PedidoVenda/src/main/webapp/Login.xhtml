@@ -9,7 +9,7 @@
 	<h:head>
 	
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title><ui:insert name="titulo">Sistema de Pedidos de Venda</ui:insert></title>
+		<title>Login</title>
 		
 		<h:outputStylesheet library="css" name="sistema.css" />
 	
@@ -17,24 +17,23 @@
  	
 	<h:body>
 	
-		<header>	
-			<div>
-				<h:link>
-					<h:graphicImage library="images" name="logo-algaworks.png" />			
-				</h:link>		
-			</div>	
-		</header>
-		
-		<div id = "conteudo">
-			<ui:insert name = "corpo" />
-		</div>
-		
-		<p:separator style="margin-top 20px"/>
-		
-		<footer>
-			Curso Online de Sistemas Comerciais Java EE com CDI, JPA e Primefaces - 
-			<a href = "www.algaworks.com">www.algaworks.com</a>
-		</footer>
+		<div id = "logindialog">
+			<h1>Login</h1>
+			
+			<h:form id = "frm">
+				<h:panelGrid columns = "2" styleClass="grid-login">
+					<p:outputLabel value = "Email" />
+					<p:inputText size = "30" />		
+					
+					<p:outputLabel value = "Email" />
+					<p:password size = "30" />	
+					
+					<h:panelGroup />	
+					<p:commandButton value = "Login" />
+				</h:panelGrid>
+			</h:form>
+			
+		</div>		
 	
 	</h:body> 	
  	
