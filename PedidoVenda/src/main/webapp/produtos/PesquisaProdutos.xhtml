@@ -60,10 +60,16 @@ xmlns="http://www.w3.org/1999/xhtml"
 	 		
 	 		<p:column style="text-align: center; width: 100px" > 
 	 			<p:button icon="pi pi-pencil" title="Editar" style="margin-right: 5px" />	 			
-	 			<p:commandButton icon="pi pi-trash" title="Excluir" />
+	 			<p:commandButton icon="pi pi-trash" title="Excluir" oncomplete="PF('confirmacaoExclusao').show()" />
 	 		</p:column>	 
 	 		
 	 	</p:dataTable>
+	 	
+	 	<p:confirmDialog header="Exclusão de produto" message="Tem certeza que deseja excluir o produto?"
+	 	widgetVar="confirmacaoExclusao">
+		 	<p:button value="Não" onclick="PF('confirmacaoExclusao').hide(); return false;" />
+		 	<p:commandButton value="Sim" oncomplete="PF('confirmacaoExclusao').hide()" />
+	 	</p:confirmDialog>
  
  </h:form>
  	
